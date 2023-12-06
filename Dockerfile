@@ -30,7 +30,7 @@ RUN composer install --no-scripts
 COPY . .
 
 # Exécuter la commande artisan key:generate
-RUN php artisan key:generate
+CMD php artisan key:generate
 
 #à modifier
 #CMD php artisan migrate && php artisan serve --host=0.0.0.0 --port=80
