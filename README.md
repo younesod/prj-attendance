@@ -26,4 +26,3 @@ docker build -t app .
 docker run -p 5000:8069 -t app
 ```
 
-[See](http://localhost:5000/)
