@@ -16,7 +16,7 @@ php artisan key:generate
 
 ## .env configuration
 ```
-DBDATABASE=database.sqlite
+DB_DATABASE=database.sqlite
 ```
 
 # 1 - Dockerise
