@@ -29,6 +29,7 @@ RUN composer install --no-scripts
 #copie tout mon projet laravel dans /app de l'image docker
 COPY . .
 
+RUN cp .env.example .env
 # Exécuter la commande artisan key:generate
 CMD php artisan key:generate
 
