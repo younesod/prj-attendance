@@ -56,11 +56,3 @@ jobs:
           publish-profile: ${{ secrets.AzureAppService_PublishProfile_b932311d1bb24a628ab75ad845817be8 }}
           images: "prjgattendanceregistry.azurecr.io/${{ secrets.AzureAppService_ContainerUsername_87d33d00bbe244f0b838523792e8e0d5 }}/app:${{ github.sha }}"
 
-      - name: Setup PHP
-        uses: shivammathur/setup-php@v2
-        with:
-          php-version: '8.2'
-          extensions: 'pdo_sqlite'
-
-      - name: Run PHP Artisan Test
-        run: php artisan test

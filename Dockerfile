@@ -6,7 +6,7 @@ RUN apt-get update && apt-get install -y \
     curl \
     # libpng-dev \
     libonig-dev \
-    libxml2-dev \
+    # libxml2-dev \
     zip \
     unzip \
     libzip-dev
@@ -32,6 +32,9 @@ COPY . .
 RUN cp .env.example .env
 # Exécuter la commande artisan key:generate
 RUN php artisan key:generate
+
+#Executer la commande pour les tests
+RUN php artisan test
 
 #à modifier
 #CMD php artisan migrate && php artisan serve --host=0.0.0.0 --port=80
