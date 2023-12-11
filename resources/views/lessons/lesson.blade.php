@@ -13,7 +13,7 @@
             <li><a href="{{ route('lessons.index') }}">Lessons</a></li>
         </ul>
     </menu>
-    <h1>Liste des Leçons</h1>
+    <h1>Liste des Leçons des étudiants</h1>
     <table>
         <tr>
             <th>Nom</th>
